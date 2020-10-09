@@ -1,31 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	  <title>Nothing Is Impossible</title>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
-	  <style type="text/css">
-	  	body {
-  font-family: "Tangerine", serif;
+<head>
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>CodePen - Tesstt</title>
+
+  <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+
+
+  <title>CodePen - Tesstt</title>
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; } /* $linkColorOnBlack */
+  </style>
+</head>
+
+<body class="">
+  <div class="referer-warning">
+    <h1>⚠️ Do not enter passwords or personal information on this page. ⚠️</h1>
+      This is a code demo posted by a web developer on <a href="https://codepen.io">codepen.io</a>.
+    <br />
+    A referer from CodePen is required to render this page view, and your browser is not sending one (<a href="https://blog.codepen.io/2017/10/05/regarding-referer-headers/" target="_blank">more details</a>).</h1>
+  </div>
+
+  <div id="result-iframe-wrap" role="main">
+
+    <iframe
+      id="result"
+      srcdoc="
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+  <meta charset=&quot;UTF-8&quot;>
+  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;&quot; href=&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+
+
+  <title>CodePen - Tesstt</title>
+  
+  
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css'>
+  
+<style>
+@import url(&quot;https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800,800i&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css?famil&quot;);
+* {
+  margin: 0px;
+  padding: 0px;
 }
+
+body {
+  font-family: &quot;Open Sans&quot;, sans-serif;
+}
+
 .context {
   width: 100%;
   position: absolute;
   top: 25vh;
   z-index: 999;
-  & h1 {
-    text-align: center;
-    color: #000;
-    font-size: 4em;
-    transition: all 1s ease;
-    cursor: default;
-    &::selection {
-      background: transparent;
-    }
-  }
 }
+.context h1 {
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  transition: all 1s ease;
+  cursor: default;
+}
+.context h1::selection {
+  background: transparent;
+}
+
 .area {
   background: #fff;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
@@ -33,6 +128,7 @@
   height: 100vh;
   transition: all 1s ease;
 }
+
 .circles {
   position: absolute;
   top: 0;
@@ -40,178 +136,369 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-
-  & li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-
-    &:nth-child(1) {
-      left: 25%;
-      width: 80px;
-      height: 80px;
-      animation-delay: 0s;
-    }
-    &:nth-child(2) {
-      left: 10%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 2s;
-      animation-duration: 12s;
-    }
-    &:nth-child(3) {
-      left: 70%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 4s;
-    }
-    &:nth-child(4) {
-      left: 40%;
-      width: 60px;
-      height: 60px;
-      animation-delay: 0s;
-      animation-duration: 18s;
-    }
-    &:nth-child(5) {
-      left: 65%;
-      width: 20px;
-      height: 20px;
-      animation-delay: 0s;
-    }
-    &:nth-child(6) {
-      left: 75%;
-      width: 110px;
-      height: 110px;
-      animation-delay: 3s;
-    }
-    &:nth-child(7) {
-      left: 35%;
-      width: 150px;
-      height: 150px;
-      animation-delay: 7s;
-    }
-    &:nth-child(8) {
-      left: 50%;
-      width: 25px;
-      height: 25px;
-      animation-delay: 15s;
-      animation-duration: 45s;
-    }
-    &:nth-child(9) {
-      left: 20%;
-      width: 15px;
-      height: 15px;
-      animation-delay: 2s;
-      animation-duration: 35s;
-    }
-    &:nth-child(10) {
-      left: 85%;
-      width: 150px;
-      height: 150px;
-      animation-delay: 0s;
-      animation-duration: 11s;
-    }
-  }
 }
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
     border-radius: 0;
   }
-
   100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }
 }
-
 .svg-icon {
   width: 2em;
   height: 2em;
-
-  & path,
-  & polygon,
-  & rect {
-    fill: transparent;
-    transition: all 0.5s ease;
-  }
-  & circle {
-    stroke: transparent;
-    stroke-width: 1;
-    transition: all 0.4s ease;
-  }
+}
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
+  fill: transparent;
+  transition: all 0.6s ease;
+}
+.svg-icon circle {
+  stroke: transparent;
+  stroke-width: 1;
+  transition: all 0.6s ease;
 }
 
 .form-wrapper {
   margin: 30px auto;
   display: table;
-
-  &:hover {
-    .form-input input {
-      background: #fff;
-      color: #000;
-    }
-    .form-icon .svg-icon {
-      & path,
-      & polygon,
-      & rect {
-        fill: rgba(0, 0, 0, 0.8);
-      }
-      & circle {
-        stroke: rgba(0, 0, 0, 0.8);
-      }
-    }
-  }
 }
+.form-wrapper:hover .form-input input {
+  background: #fff;
+  color: #000;
+}
+.form-wrapper:hover .form-icon .svg-icon path, .form-wrapper:hover .form-icon .svg-icon polygon, .form-wrapper:hover .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-wrapper:hover .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+
 .form-input {
   position: relative;
-  & input {
-    font-size: 1.5em;
-    padding: 0.5em 0.5em 0.5em 2em;
-    width: 399px;
-    border-radius: 1em;
-    border: none;
-    background: transparent;
-    transition: all 0.6s ease;
-    color: transparent;
-    outline: transparent;
-
-    &:focus {
-      background: #fff;
-      color: #000;
-      & + .form-icon .svg-icon {
-        & path,
-        & polygon,
-        & rect {
-          fill: rgba(0, 0, 0, 0.8);
-        }
-        & circle {
-          stroke: rgba(0, 0, 0, 0.8);
-        }
-      }
-    }
-  }
-  & .form-icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
+}
+.form-input input {
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0.5em 2em;
+  width: 399px;
+  border-radius: 1em;
+  border: none;
+  background: transparent;
+  transition: all 0.6s ease;
+  color: transparent;
+  outline: transparent;
+}
+.form-input input:focus {
+  background: #fff;
+  color: #000;
+}
+.form-input input:focus + .form-icon .svg-icon path, .form-input input:focus + .form-icon .svg-icon polygon, .form-input input:focus + .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-input input:focus + .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+.form-input .form-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-.pickr{
-  display: none
+.pickr {
+  display: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: &quot;Tangerine&quot;, serif;
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 25vh;
+  z-index: 999;
+}
+.context h1 {
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  transition: all 1s ease;
+  cursor: default;
+}
+.context h1::selection {
+  background: transparent;
+}
+
+.area {
+  background: #fff;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+  transition: all 1s ease;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
+  fill: transparent;
+  transition: all 0.5s ease;
+}
+.svg-icon circle {
+  stroke: transparent;
+  stroke-width: 1;
+  transition: all 0.4s ease;
+}
+
+.form-wrapper {
+  margin: 30px auto;
+  display: table;
+}
+.form-wrapper:hover .form-input input {
+  background: #fff;
+  color: #000;
+}
+.form-wrapper:hover .form-icon .svg-icon path, .form-wrapper:hover .form-icon .svg-icon polygon, .form-wrapper:hover .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-wrapper:hover .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+
+.form-input {
+  position: relative;
+}
+.form-input input {
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0.5em 2em;
+  width: 399px;
+  border-radius: 1em;
+  border: none;
+  background: transparent;
+  transition: all 0.6s ease;
+  color: transparent;
+  outline: transparent;
+}
+.form-input input:focus {
+  background: #fff;
+  color: #000;
+}
+.form-input input:focus + .form-icon .svg-icon path, .form-input input:focus + .form-icon .svg-icon polygon, .form-input input:focus + .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-input input:focus + .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+.form-input .form-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.pickr {
+  display: none;
 }
 </style>
-	</head>
-<body onload="init()">
-	<div class=&quot;context&quot;>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+</head>
+
+<body translate=&quot;no&quot; >
+  <div class=&quot;context&quot;>
   <div class=&quot;text-wrapper&quot;>
     <h1 id=&quot;clock-text&quot;></h1>
     <h1 id=&quot;greet-text&quot;></h1>
@@ -275,9 +562,9 @@
   <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11'></script>
 <script src='https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-	<script type="text/javascript"></script>
-		<script id=&quot;rendered-js&quot; ></script>quot
-		$(function () {
+  
+      <script id=&quot;rendered-js&quot; >
+$(function () {
   init();
   $(&quot;.area, .text-wrapper&quot;).on(&quot;contextmenu&quot;, e => {
     showColorPicker(e.clientX, e.clientY);
@@ -396,4 +683,3 @@ function redirectToGoogle(q) {
   </div>
 </body>
 </html>
-
