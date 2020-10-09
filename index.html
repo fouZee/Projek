@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>CodePen - Tesstt</title>
+
+  <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+
+
+  <title>CodePen - Tesstt</title>
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; } /* $linkColorOnBlack */
+  </style>
+</head>
+
+<body class="">
+  <div class="referer-warning">
+    <h1>⚠️ Do not enter passwords or personal information on this page. ⚠️</h1>
+      This is a code demo posted by a web developer on <a href="https://codepen.io">codepen.io</a>.
+    <br />
+    A referer from CodePen is required to render this page view, and your browser is not sending one (<a href="https://blog.codepen.io/2017/10/05/regarding-referer-headers/" target="_blank">more details</a>).</h1>
+  </div>
+
+  <div id="result-iframe-wrap" role="main">
+
+    <iframe
+      id="result"
+      srcdoc="
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+  <meta charset=&quot;UTF-8&quot;>
+  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;&quot; href=&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+
+
+  <title>CodePen - Tesstt</title>
+  
+  
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css'>
+  
+<style>
+@import url(&quot;https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800,800i&amp;display=swap&quot;);
+@import url(&quot;https://fonts.googleapis.com/css?famil&quot;);
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: &quot;Open Sans&quot;, sans-serif;
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 25vh;
+  z-index: 999;
+}
+.context h1 {
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  transition: all 1s ease;
+  cursor: default;
+}
+.context h1::selection {
+  background: transparent;
+}
+
+.area {
+  background: #fff;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+  transition: all 1s ease;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
+  fill: transparent;
+  transition: all 0.6s ease;
+}
+.svg-icon circle {
+  stroke: transparent;
+  stroke-width: 1;
+  transition: all 0.6s ease;
+}
+
+.form-wrapper {
+  margin: 30px auto;
+  display: table;
+}
+.form-wrapper:hover .form-input input {
+  background: #fff;
+  color: #000;
+}
+.form-wrapper:hover .form-icon .svg-icon path, .form-wrapper:hover .form-icon .svg-icon polygon, .form-wrapper:hover .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-wrapper:hover .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+
+.form-input {
+  position: relative;
+}
+.form-input input {
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0.5em 2em;
+  width: 399px;
+  border-radius: 1em;
+  border: none;
+  background: transparent;
+  transition: all 0.6s ease;
+  color: transparent;
+  outline: transparent;
+}
+.form-input input:focus {
+  background: #fff;
+  color: #000;
+}
+.form-input input:focus + .form-icon .svg-icon path, .form-input input:focus + .form-icon .svg-icon polygon, .form-input input:focus + .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-input input:focus + .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+.form-input .form-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.pickr {
+  display: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: &quot;Tangerine&quot;, serif;
+}
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 25vh;
+  z-index: 999;
+}
+.context h1 {
+  text-align: center;
+  color: #000;
+  font-size: 4em;
+  transition: all 1s ease;
+  cursor: default;
+}
+.context h1::selection {
+  background: transparent;
+}
+
+.area {
+  background: #fff;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+  transition: all 1s ease;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
+  fill: transparent;
+  transition: all 0.5s ease;
+}
+.svg-icon circle {
+  stroke: transparent;
+  stroke-width: 1;
+  transition: all 0.4s ease;
+}
+
+.form-wrapper {
+  margin: 30px auto;
+  display: table;
+}
+.form-wrapper:hover .form-input input {
+  background: #fff;
+  color: #000;
+}
+.form-wrapper:hover .form-icon .svg-icon path, .form-wrapper:hover .form-icon .svg-icon polygon, .form-wrapper:hover .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-wrapper:hover .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+
+.form-input {
+  position: relative;
+}
+.form-input input {
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0.5em 2em;
+  width: 399px;
+  border-radius: 1em;
+  border: none;
+  background: transparent;
+  transition: all 0.6s ease;
+  color: transparent;
+  outline: transparent;
+}
+.form-input input:focus {
+  background: #fff;
+  color: #000;
+}
+.form-input input:focus + .form-icon .svg-icon path, .form-input input:focus + .form-icon .svg-icon polygon, .form-input input:focus + .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-input input:focus + .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+.form-input .form-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.pickr {
+  display: none;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+</head>
+
+<body translate=&quot;no&quot; >
+  <div class=&quot;context&quot;>
+  <div class=&quot;text-wrapper&quot;>
+    <h1 id=&quot;clock-text&quot;></h1>
+    <h1 id=&quot;greet-text&quot;></h1>
+  </div>
+  <div class=&quot;form-wrapper&quot;>
+    <div class=&quot;form-input&quot;>
+      <input type=&quot;text&quot; id=&quot;search-box&quot;>
+      <span class=&quot;form-icon&quot;><svg class=&quot;svg-icon&quot; viewBox=&quot;0 0 20 20&quot;>
+        <path d=&quot;M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z&quot;></path>
+        </svg></span>
+    </div>
+  </div>
+  <div class=&quot;color-picker&quot;></div>
+</div>
+
+<div class=&quot;area&quot;>
+  <ul class=&quot;circles&quot;>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div><div class=&quot;context&quot;>
+  <div class=&quot;text-wrapper&quot;>
+    <h1 id=&quot;clock-text&quot;></h1>
+    <h1 id=&quot;greet-text&quot;></h1>
+  </div>
+  <div class=&quot;form-wrapper&quot;>
+    <div class=&quot;form-input&quot;>
+      <input type=&quot;text&quot; id=&quot;search-box&quot;>
+      <span class=&quot;form-icon&quot;><svg class=&quot;svg-icon&quot; viewBox=&quot;0 0 20 20&quot;>
+        <path d=&quot;M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z&quot;></path>
+        </svg></span>
+    </div>
+  </div>
+  <div class=&quot;color-picker&quot;></div>
+</div>
+
+<div class=&quot;area&quot;>
+  <ul class=&quot;circles&quot;>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+    <script src=&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js&quot;></script>
+
+  <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11'></script>
+<script src='https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  
+      <script id=&quot;rendered-js&quot; >
+$(function () {
+  init();
+  $(&quot;.area, .text-wrapper&quot;).on(&quot;contextmenu&quot;, e => {
+    showColorPicker(e.clientX, e.clientY);
+    return false;
+  });
+  $(&quot;#search-box&quot;).keypress(e => {
+    if (e.which == 13) redirectToGoogle($(&quot;#search-box&quot;).val());
+  });
+});
+/**
+      Variables
+    **/
+const pickr = Pickr.create({
+  el: &quot;.color-picker&quot;,
+  theme: &quot;nano&quot;,
+  default: &quot;rgba(255, 255, 255, 0.2)&quot;,
+  defaultRepresentation: &quot;RGBA&quot;,
+  components: {
+    preview: true,
+    opacity: true,
+    hue: true } });
+
+
+
+pickr.on(&quot;change&quot;, (color, instance) => {
+  color = color.toRGBA().toString();
+  setCirclesColor(color);
+  lsSetItem(&quot;circlesColor&quot;, color);
+});
+
+/**
+      Functions
+    **/
+function init() {
+  refreshTime();
+  getGreetText();
+  if (lsGetItem(&quot;circlesColor&quot;)) setCirclesColor(lsGetItem(&quot;circlesColor&quot;));
+}
+function refreshTime() {
+  $(&quot;#clock-text&quot;).html(getTime());
+  var t = setTimeout(refreshTime, 1000);
+}
+function getGreetText() {
+  var typed = new Typed(&quot;#greet-text&quot;, {
+    strings: [greetingTextTo(&quot;pp&quot;)], //Ganti nama disini
+    loop: false,
+    typeSpeed: 50, //Atur kecepatan ketik
+    showCursor: false,
+    onComplete: function (self) {
+      $(&quot;.context h1&quot;).css(&quot;color&quot;, &quot;#fff&quot;);
+      $(&quot;.area&quot;).css(&quot;background&quot;, &quot;#000&quot;);
+    } });
+
+}
+function greetingTextTo(i, delay = 100) {
+  var today = new Date();
+  var hrs = today.getHours();
+
+  var greet;
+
+  if (hrs < 12) greet = &quot;Selamat Pagii, ^&quot;;else
+  if (hrs >= 12 &amp;&amp; hrs <= 15) greet = &quot;Selamat Siang, ^&quot;;else
+  if (hrs >= 15 &amp;&amp; hrs <= 18) greet = &quot;Selamat Sore, ^&quot;;else
+  if (hrs >= 18 &amp;&amp; hrs <= 21) greet = &quot;Selamat Malam, ^&quot;;else
+  greet = &quot;Selamat Tidurr Sayang, Have A Nice Dream, ^&quot;;
+
+  return greet + delay + i;
+}
+function getTime() {
+  var today = new Date();
+  var h = checkTime(today.getHours());
+  var m = checkTime(today.getMinutes());
+  var s = checkTime(today.getSeconds());
+
+  return h + &quot;:&quot; + m + &quot;:&quot; + s;
+}
+function checkTime(i) {
+  if (i < 10) i = &quot;0&quot; + i;
+  return i;
+}
+function showColorPicker(x, y) {
+  var pcr = $(&quot;.pcr-app&quot;);
+  pcr.addClass(&quot;visible&quot;);
+  pcr.css(&quot;left&quot;, x);
+  pcr.css(&quot;top&quot;, y);
+}
+function lsGetItem(name) {
+  return localStorage.getItem(name);
+}
+function lsSetItem(name, value) {
+  localStorage.setItem(name, value);
+  return true;
+}
+function setCirclesColor(color) {
+  $(&quot;.circles li&quot;).css(&quot;background&quot;, color);
+}
+function redirectToGoogle(q) {
+  q = q.split(&quot; &quot;).join(&quot;+&quot;);
+  var url = &quot;https://google.com/search?q=&quot; + q;
+  window.location.replace(url);
+}
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
+"
+      sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation  allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowTransparency="true"
+      allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
+
+  </div>
+</body>
+</html>
