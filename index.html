@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
      <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css'>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
        <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
     <style type="text/css">
-    	@import url("https://fonts.googleapis.com/css?famil");
+      @import url("https://fonts.googleapis.com/css?famil");
 
 * {
   margin: 0px;
@@ -252,10 +253,11 @@ body {
     <script src=&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js&quot;></script>
   <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11'></script>
 <script src='https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
   
     <script type="text/javascript">
-    	$(function () {
+      $(function () {
   init();
   $(".area, .text-wrapper").on("contextmenu", (e) => {
     showColorPicker(e.clientX, e.clientY);
@@ -357,6 +359,28 @@ function redirectToGoogle(q) {
   var url = "https://google.com/search?q=" + q;
   window.location.replace(url);
 }
+function readColor(){
+        if(localStorage.getItem("manualColor")==null){
+        }
+        else{
+          var color = $(".custom");
+          (color).css('background',localStorage.getItem("manualColor"));
+          $('#color-picker').val(localStorage.getItem("manualColor"));
+        }
+        colorpicker = $('#color-picker').spectrum({
+          type: "text",
+          showInput: "true",
+          showAlpha: "false",
+          showButtons: "false"
+        });
+        colorpicker.on('move.spectrum', function(e, tinycolor) {
+          var hexVal = tinycolor.toHexString();
+          var color = $(".custom");
+          color.css('background',hexVal);
+          console.log(hexVal);
+          localStorage.setItem("manualColor", hexVal);
+         });
+      }
     </script>
   </body>
 </html>
