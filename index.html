@@ -137,80 +137,68 @@ body {
     border-radius: 50%;
   }
 }
-
 .svg-icon {
   width: 2em;
   height: 2em;
-
-  & path,
-  & polygon,
-  & rect {
-    fill: transparent;
-    transition: all 0.5s ease;
-  }
-  & circle {
-    stroke: transparent;
-    stroke-width: 1;
-    transition: all 0.4s ease;
-  }
+}
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
+  fill: transparent;
+  transition: all 0.5s ease;
+}
+.svg-icon circle {
+  stroke: transparent;
+  stroke-width: 1;
+  transition: all 0.4s ease;
 }
 
 .form-wrapper {
   margin: 30px auto;
   display: table;
-
-  &:hover {
-    .form-input input {
-      background: #fff;
-      color: #000;
-    }
-    .form-icon .svg-icon {
-      & path,
-      & polygon,
-      & rect {
-        fill: rgba(0, 0, 0, 0.8);
-      }
-      & circle {
-        stroke: rgba(0, 0, 0, 0.8);
-      }
-    }
-  }
 }
+.form-wrapper:hover .form-input input {
+  background: #fff;
+  color: #000;
+}
+.form-wrapper:hover .form-icon .svg-icon path, .form-wrapper:hover .form-icon .svg-icon polygon, .form-wrapper:hover .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-wrapper:hover .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+
 .form-input {
   position: relative;
-  & input {
-    font-size: 1.5em;
-    padding: 0.5em 0.5em 0.5em 2em;
-    width: 399px;
-    border-radius: 1em;
-    border: none;
-    background: transparent;
-    transition: all 0.6s ease;
-    color: transparent;
-    outline: transparent;
-
-    &:focus {
-      background: #fff;
-      color: #000;
-      & + .form-icon .svg-icon {
-        & path,
-        & polygon,
-        & rect {
-          fill: rgba(0, 0, 0, 0.8);
-        }
-        & circle {
-          stroke: rgba(0, 0, 0, 0.8);
-        }
-      }
-    }
-  }
-  & .form-icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
+}
+.form-input input {
+  font-size: 1.5em;
+  padding: 0.5em 0.5em 0.5em 2em;
+  width: 399px;
+  border-radius: 1em;
+  border: none;
+  background: transparent;
+  transition: all 0.6s ease;
+  color: transparent;
+  outline: transparent;
+}
+.form-input input:focus {
+  background: #fff;
+  color: #000;
+}
+.form-input input:focus + .form-icon .svg-icon path, .form-input input:focus + .form-icon .svg-icon polygon, .form-input input:focus + .form-icon .svg-icon rect {
+  fill: rgba(0, 0, 0, 0.8);
+}
+.form-input input:focus + .form-icon .svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.8);
+}
+.form-input .form-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
+.pickr {
+  display: none;
+}
 .pickr{
   display: none
 }
