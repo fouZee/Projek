@@ -887,10 +887,61 @@ function readColor(){
           localStorage.setItem("manualColor", hexVal);
          });
       }
-    </script>
-  </body>
-</html>
+            baffleEffect = baffle('.note', {
+          characters: 'supercalifragilisticexpialidocious',
+          speed: 150
+      });
+      function readMode(){
+        if(localStorage.getItem("mode")!=null){
 
+        }
+        switch(localStorage.getItem("mode")) {
+          case 'ubuntu':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio1").prop('checked',true);
+            ubuntu();
+            break;
+          case 'dawn':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio2").prop('checked',true);
+            dawn();
+            break;
+          case 'morning':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio3").prop('checked',true);
+            morning();
+            break;
+          case 'noon':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio4").prop('checked',true);
+            noon();
+            break;
+          case 'afternoon':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio5").prop('checked',true);
+            afternoon();
+            break;
+          case 'sunset':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio6").prop('checked',true);
+            sunset();
+            break;
+          case 'evening':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio7").prop('checked',true);
+            evening();
+            break;
+          case 'midnight':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio8").prop('checked',true);
+            midnight();
+            break;
+          case 'manual':
+            $('.kontrol input').prop('checked', false);
+            $("#customRadio10").prop('checked',true);
+            manual();
+            break;
+            default;
     </script>
   </body>
 </html>
