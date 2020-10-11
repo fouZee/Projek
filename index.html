@@ -40,7 +40,22 @@ body {
   height: 100vh;
   transition: all 1s ease;
 }
-
+.panah{
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: calc(50% - 5px);
+        right: -30px;
+        border: 2px solid rgba(255,255,255,0.2);
+        border-bottom: none;
+        border-left: none;
+        border-radius: 2px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        transform: rotate(45deg);
+        z-index: 50;
+      }
 .circles {
   position: absolute;
   top: 0;
