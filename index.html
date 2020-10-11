@@ -39,33 +39,6 @@ body {
   height: 100vh;
   transition: all 1s ease;
 }
-.panah{
-        content: '';
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        top: calc(50% - 5px);
-        right: -30px;
-        border: 2px solid rgba(255,255,255,0.2);
-        border-bottom: none;
-        border-left: none;
-        border-radius: 2px;
-        border-top-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-        transform: rotate(45deg);
-        z-index: 50;
-      }
-        .kontrol{
-        margin: 20px;
-        background: #fff;
-        padding: 20px;
-        position: absolute;
-        width: 200px;
-        border-radius: 10px;
-        left: -220px;
-        transition: all 1 ease;
-        z-index: 99;
-      }
 .circles {
   position: absolute;
   top: 0;
@@ -229,8 +202,6 @@ body {
 }
  </style>
    <body onload="init()">
-       <div class="kontrol" onload="readStorage()">
-      <div class="panah"></div>
 <div class="area">
   <ul class="circles">
     <li></li>
@@ -246,7 +217,6 @@ body {
   </ul>
 </div><div class="context">
   <div class="text-wrapper">
-</audio>
     <h1 id="clock-text"></h1>
     <h1 id="greet-text"></h1>
   </div>
