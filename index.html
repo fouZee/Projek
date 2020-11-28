@@ -50,7 +50,39 @@ z-index:1000;
 width:350px;
 overflow:visible;
 }
-
+   .bulat span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #fff;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: animate2 6s linear infinite;
+      }
+      .bulat span:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #fff;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: animate3 4s linear infinite;
+      }
+      .bulat span:nth-child(3){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 5px solid #fff;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: animate2 10s linear infinite;
+      }
 .context {
   width: 100%;
   position: absolute;
@@ -237,9 +269,21 @@ overflow:visible;
 .pickr{
   display: none
 }
+         @media only screen and (max-width: 900px), screen and (max-height: 700px) {
+             .bulat{
+          width: 300px;
+          height: 300px;
+        }
+      }
+             
  </style>
    <body onload="init()">
 <div class="area">
+    <div class="bulat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
   <ul class="circles">
     <li></li>
     <li></li>
