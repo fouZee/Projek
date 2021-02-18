@@ -336,7 +336,7 @@ function refreshTime() {
 }
 function getGreetText() {
   var typed = new Typed("#greet-text", {
-    strings: [greetingTextTo("izaaa sayangg <3")], //Ganti nama disini
+    strings: [greetingTextTo("Kamu")], //Ganti nama disini
     loop: false,
     typeSpeed: 50, //Atur kecepatan ketik
     showCursor: false,
@@ -356,7 +356,7 @@ function greetingTextTo(i, delay = 100) {
   else if (hrs >= 12 && hrs <= 15) greet = "Selamat Siang, ^";
   else if (hrs >= 15 && hrs <= 18) greet = "Selamat Sore, ^";
    else if (hrs >= 18 && hrs <= 21) greet = "Selamat Malam, ^";
-  else greet = "Jangan Lupa Bobok, Udah Malem, Tiduuuuurrrr ^";
+  else greet = "Jangan Lupa tidur, Udah Malem, Tiduuuuurrrr ^";
 
   return greet + delay + i;
 }
